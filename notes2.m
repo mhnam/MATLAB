@@ -4,9 +4,9 @@
 
 %% CHP 1-2. Assigning Matrix
 A = [1, 2, 3, 4];
-B = [1 : 4]; %°øÂ÷°¡ 1ÀÎ range
-C = [1 : 2 : 5]; %°øÂ÷°¡ 2ÀÎ (1, 5) range
-D = linspace(1, 7, 3); %Ç×ÀÌ 3°³°¡ µÇµµ·Ï (1, 7) range
+B = [1 : 4]; %ê³µì°¨ê°€ 1ì¸ range
+C = [1 : 2 : 5]; %ê³µì°¨ê°€ 2ì¸ (1, 5) range
+D = linspace(1, 7, 3); %í•­ì´ 3ê°œê°€ ë˜ë„ë¡ (1, 7) range
 E = [1 : 4 ; 5 : 8]; % 2X4 matrix, note that ; change row
 % E = [1: 4; 5 : 6] Not valid
 F = {'hello', 'world'}
