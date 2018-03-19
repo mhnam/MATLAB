@@ -2,11 +2,6 @@
 % DATE: 19/03/2018
 % AUTHOR: MINHYUK NAM
 
-%% Contents
-% * Flow Control
-% * Operations
-% * Function Handling
-
 %% CHP 3-1. Flow Control
 %% Repetition(1): for Loop
 a = 0;
