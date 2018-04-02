@@ -3,8 +3,7 @@
 % Date 02/04/2018
 
 %% Random Matrix
-clc
-clear
+clear all
 
 A = [randperm(9, 3); randperm(9, 3); randperm(9, 3)]
 a = sort(A(:));
