@@ -23,7 +23,7 @@ for i = 1 : 20
 end
 disp(answer)
 
-%% 2. Goldbach's conjecture (2)
+%% 2.1 Goldbach's conjecture (1)
 % to check all even numbers from 4 to 20
 
 for i = 3 : 20
@@ -37,7 +37,7 @@ for i = 3 : 20
     end
 end
 
-%% 2. Goldbach's conjecture (2)
+%% 2.2 Goldbach's conjecture (2)
 % to check all even numbers from 4 to 20
 
 for n = 1:10
@@ -49,8 +49,7 @@ for n = 1:10
     end
 end
 
-%% 3. Riemann sums (1)
-% using for loop
+%% 3.1 Riemann sums (1): using for loop
 
 f = @(x) x.^2;
 area = 0;
@@ -71,8 +70,7 @@ for n = 1 : 1000;
     end
 end
 
-%% 3. Riemann sums (2)
-% using while loop
+%% 3.2 Riemann sums (2): using while loop comparing with err term
 
 f = @(x) x.^2;
 n = 0;
@@ -92,8 +90,7 @@ end
 
 fprintf("\nThe error term become less than 0.0014 when there is %d pieces and the result is %d\n", n, area)
 
-%% 3. Riemann sums (2)
-% using while loop
+%% 3.3 Riemann sums (3): using while loop comparing with 1/err
 
 f = @(x) x.^2;
 n = 0;
