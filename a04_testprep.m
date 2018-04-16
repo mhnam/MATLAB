@@ -20,6 +20,23 @@ end
 
 A
 
+%% Problem 1: Suggested Answer
+clear all
+
+A = zeros(5);
+
+for i = 1 : 5;
+    for j = 1 : 5;
+        if mod(i+j, 2)
+            A(i, j) = 1;
+        else
+            A(i, j) = 0;
+        end
+    end
+end
+
+A
+
 %% Problem 4 (1)
 clear all
 
