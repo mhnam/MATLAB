@@ -49,7 +49,7 @@ for n = 1:10
     end
 end
 
-%% 3. Parial Sum (1)
+%% 3. Riemann sums (1)
 % using for loop
 
 f = @(x) x.^2;
@@ -71,7 +71,7 @@ for n = 1 : 1000;
     end
 end
 
-%% 3. Parial Sum (2)
+%% 3. Riemann sums (2)
 % using while loop
 
 f = @(x) x.^2;
@@ -92,7 +92,7 @@ end
 
 fprintf("\nThe error term become less than 0.0014 when there is %d pieces and the result is %d\n", n, area)
 
-%% 3. Parial Sum (2)
+%% 3. Riemann sums (2)
 % using while loop
 
 f = @(x) x.^2;
