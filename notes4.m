@@ -32,7 +32,7 @@ figure(5)
 % c = 700;
 % dYdt = k * Y * (1 - Y/c); ODE problem
 
-% There are mainly tow differnet type of equation - BVP, IVP - Bound value
+% There are mainly two differnet types of equation - BVP, IVP - Bound value
 % prob, and initial value prob.- and ode solver is to solve IVP, so that 
 
 [t, Y] = ode45('yeastDE', 0:20, 1); %(x-value, t-value, initial-val)
