@@ -40,7 +40,7 @@ plot(t,Y)
 
 % There are vaious type of solver but ode45 is the most typical type
 
-%% Vector Field (not testable)
+%% Vector Field (not examinable)
 % There is a function called 'yeastDE'
 % function dydt = yeastDE(t, y)
 % dydt = t - y ;
