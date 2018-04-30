@@ -25,16 +25,27 @@ end
 
 disp(sum)
 
+%% 3
+% Since the problem 3 requires seperate function file, the code has been made as comment to run in a single file
+
 %% 3-1
-function y = func(x1, x2);
-y = [x1 + x2, x1 * x2];
-end
+% function y = func(x1, x2);
+% y = [x1 + x2, x1 * x2];
+% end
+
+% NOTE THAT FOLLOWING METHOD IS RECOMMENDED
+% function [y1, y2] = func(u1, u2)
+% y1 = u1 + u2;
+% y2 = u1 * u2;
 
 %% 3-2
-clear
-clc
+% clear
+% clc
+% 
+% M3_1_20150555(64, 512)
 
-M3_1_20150555(64, 512)
+% UNDER THE RECOMMENDED METHOD
+% [y1, y2] = func(64, 512)
 
 %% 4-1
 clear
