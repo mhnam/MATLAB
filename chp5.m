@@ -46,9 +46,9 @@ end
 ezplot(f(x),[x_min, x_max])
 hold off
 
-fprintf('Rectangular Sum: %.2f', recSum)
-fprintf('\nActual Definite Integral: %.2f', int(f(x), [x_min, x_max]))
-fprintf("\nError: %.6f", abs(recSum- int(f(x), [x_min, x_max])))
+fprintf('Rectangular Sum: %.2f\n', recSum)
+fprintf('\nActual Definite Integral: %.2f\n', int(f(x), [x_min, x_max]))
+fprintf('\nError: %.6f\n', abs(recSum- int(f(x), [x_min, x_max])))
 
 %% 2-2. Midpoint Rectangular Sum (NOT DONE)
 clc
@@ -81,11 +81,11 @@ end
 ezplot(f(x),[x_min, x_max])
 hold off
 
-fprintf('Rectangular Sum: %.2f', recSum)
-fprintf('\nActual Definite Integral: %.2f', int(f(x), [x_min, x_max]))
-fprintf("\nError: %.6f", abs(recSum- int(f(x), [x_min, x_max])))
+fprintf('Rectangular Sum: %.2f\n', recSum)
+fprintf('Actual Definite Integral: %.2f\n', int(f(x), [x_min, x_max]))
+fprintf('Error: %.6f\n', abs(recSum- int(f(x), [x_min, x_max])))
 
-%% 2-3. Trapazoid Sum (Simpson's Rule)
+%% 2-3. Trapezoid Sum (Simpson's Rule)
 clc
 clear
 
@@ -116,6 +116,6 @@ end
 ezplot(f(x),[x_min, x_max])
 hold off
 
-fprintf("Trapazoid Sum: %.6f", trapSum)
-fprintf("\nActual Definite Integral: %.6f", int(f(x), [x_min, x_max]))
-fprintf("\nError: %.6f", abs(trapSum- int(f(x), [x_min, x_max])))
+fprintf('Trapazoid Sum: %.6f\n', trapSum)
+fprintf('Actual Definite Integral: %.6f\n', int(f(x), [x_min, x_max]))
+fprintf('Error: %.6f\n', abs(trapSum- int(f(x), [x_min, x_max])))
