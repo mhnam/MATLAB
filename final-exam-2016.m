@@ -24,10 +24,59 @@ y_max = (-1) * y_max;
 [x_max, y_max]
 
 %% QUESTION 2
+clear
+clc
+
+%define function f
+syms x
+f(x) = 1/(1 + 3 * x^2);
+
+% a
+F = int(f, x)
+
+% b
+F(1) - F(0)
+
+% c
+int(f, x, 0, 1)
+
+% d
+clear
+clc
+
+syms x
+f(x) = 1/(1 + 3 * x^2);
+area = 0;
+val = int(f,x,0,1)
+
+for n = 1 : 1000
+    x = 1/n : 1/n : 1;
+    y = f(x);
+    for m = 1 : (length(x)-1)
+        area = area + 1/n * y(m);
+    end
+    
+    if abs(val - area) < 1/1024
+        disp(n)
+        break
+    else
+        n = 0;
+        area = 0;
+    end
+end
 
 %% QUESTION 3
+clear
+clc
+
+syms x
+f(x) = 4 * x * (x - 1) * (x - 2)
+int(f, x, 0, 1) - int(f, x, 1, 2) % int(abs(f), x, 0, 2) is also possible
 
 %% QUESTION 4
+clear
+clc
+
 syms t
 
 a1 = -0.2;
